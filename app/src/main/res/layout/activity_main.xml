@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:background="#235b1b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="sim2.esprit.raid.roulette.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/table2"
+        android:id="@+id/imageView"
+
+        android:layout_alignParentBottom="true" >
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+            android:id="@+id/winnernumber"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+</LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/roulette"
+        android:id="@+id/image_roulette"
+        android:adjustViewBounds="true"
+        android:clickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?android:attr/textSelectHandle"
+        android:id="@+id/imageView2"
+        android:rotation="180"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/ball"
+        android:id="@+id/image_ball"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
